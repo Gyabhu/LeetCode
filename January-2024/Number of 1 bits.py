@@ -7,8 +7,10 @@
 
 class Solution:
     def hammingWeight(n):
-        binary = "{0:b}".format(int(n))
-        str(binary)
+
+        # bin = bin(n)
+        # print(bin)
+        binary = format(int(n), 'b')
         return binary.count("1")
 
 
